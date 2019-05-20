@@ -41,7 +41,7 @@ function buildCartList() {
     }
 }
 
-// Подсчет стоимости товаров в корзине
+// Подсчет стоимости товаров в корзине.
 function countBasketPrice(cart) {
     var priceBasket = 0;
     var n = 0;
