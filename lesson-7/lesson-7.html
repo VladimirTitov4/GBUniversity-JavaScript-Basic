@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .catalog,
+        .cart {
+            width: 400px;
+            background-color: beige;
+            margin-top: 50px;
+        }
+
+        .catalog li,
+        .cart li {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            border: 1px solid lightgray;
+            box-sizing: border-box;
+        }
+
+        .cart li:first-child {
+            margin-top: 50px;
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button,
+        .buttonDelete {
+            width: 70px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="catalogTemplate" style="display: none;">
+        <li>
+            <h3 class="title"></h3>
+            <p class="price"></p>
+            <img class="picture">
+            <button class="button">Buy</button>
+        </li>
+    </div>
+    <div id="cartTemplate" style="display: none;">
+        <li>
+            <h3 class="title"></h3>
+            <p class="price"></p>
+            <img class="picture">
+            <button class="buttonDelete">Delete</button>
+        </li>
+    </div>
+    <div class="container">
+        <div>
+            <h2>Каталог товаров: </h2>
+            <div id="catalog" class="catalog"></div>
+        </div>
+        <div>
+            <h2>Ваша корзина: </h2>
+            <div id="cart" class="cart"></div>
+        </div>
+    </div>
+    <script src="lesson-7-0.js"></script>
+    <script src="lesson-7.js"></script>
+</body>
+</html>
