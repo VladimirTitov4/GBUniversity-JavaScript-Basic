@@ -79,7 +79,9 @@ function handleBuyClick(event) {
             countBasketPrice(cart);
             buildCart();
         } else {
-            cart.splice(0, 1);
+            cart = [];
+            countBasketPrice(cart);
+            buildCart();
         }
     }
 }
